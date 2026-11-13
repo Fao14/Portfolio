@@ -91,7 +91,7 @@ export const projects: Project[] = [
       subtitle:
         'Designing and developing a high-end, responsive website for an international sports consultancy, balancing prestige with fast, practical performance.',
       snapshot: [
-        { label: 'Role', value: 'Developer & UI/UX Designer' },
+        { label: 'Role', value: 'UI/UX Designer & Developer' },
         { label: 'Stack', value: 'React, Tailwind CSS' },
         { label: 'Timeline', value: 'Aug 2026 – Present' },
         { label: 'Status', value: 'Live' },
@@ -220,7 +220,7 @@ export const projects: Project[] = [
       subtitle:
         'Developing a bold, responsive company website that explains sports technology to athletes, coaches and governments across Africa.',
       snapshot: [
-        { label: 'Role', value: 'Developer & UI/UX Designer' },
+        { label: 'Role', value: 'UI/UX Designer & Developer' },
         { label: 'Stack', value: 'React, Tailwind CSS' },
         { label: 'Launched', value: 'November 2025' },
         { label: 'Status', value: 'Live at afritechsports.com' },
@@ -344,6 +344,117 @@ export const projects: Project[] = [
     liveUrl: 'https://pedni-honey.vercel.app/',
     status: 'In development',
     year: '2026',
+    caseStudy: {
+      eyebrow: 'Full-Stack Case Study',
+      title: 'Pedni Honey: From Hive to Checkout',
+      subtitle:
+        'Designing and building a full-stack e-commerce platform for a Kenyan beekeeping supplies business, from the first Figma screens to M-Pesa checkout and an admin dashboard.',
+      snapshot: [
+        { label: 'Role', value: 'UI/UX Designer & Developer' },
+        { label: 'Stack', value: 'React, FastAPI, PostgreSQL' },
+        { label: 'Payments', value: 'M-Pesa (STK Push)' },
+        { label: 'Status', value: 'In development' },
+      ],
+      brief: {
+        label: 'Section 1: The Brief',
+        heading: 'Taking a Beekeeping Business Online',
+        text: 'Pedni Honey supplies beekeeping equipment, honey and training across Kenya. The goal was one platform where customers can browse equipment, pay with M-Pesa and request training or bulk orders, and where the team can run the store themselves.',
+        points: [
+          'A product catalogue with categories, search and stock levels',
+          'Checkout built around M-Pesa, the way Kenyan customers pay',
+          'An admin dashboard for products, orders, reviews and training requests',
+        ],
+        image: '/images/pedni-figma.jpg',
+        imageCaptionLabel: 'Early design',
+        imageCaption: 'First Figma concept for the homepage',
+      },
+      build: {
+        label: 'Section 2: The Build',
+        heading: 'A Full-Stack Platform',
+        text: 'I designed the store in Figma, built the front end in React with Tailwind CSS, and connected it to a REST API written in FastAPI (Python) with a PostgreSQL database.',
+        items: [
+          {
+            title: 'REST API',
+            text: 'Versioned endpoints for products, orders, reviews, newsletters and authentication, documented with OpenAPI.',
+          },
+          {
+            title: 'M-Pesa checkout',
+            text: "Checkout sends an STK Push prompt to the customer's phone, and a payment callback confirms the order and stores the M-Pesa receipt.",
+          },
+          {
+            title: 'Admin dashboard',
+            text: 'A protected admin area to manage products and stock, orders and delivery, customer reviews, training requests and newsletters.',
+          },
+          {
+            title: 'Customer accounts',
+            text: 'Registration, login, OTP-based password reset, order history and order tracking.',
+          },
+        ],
+      },
+      users: {
+        label: 'Section 3: The Users',
+        heading: 'Who the Store Serves',
+        cards: [
+          {
+            icon: 'users',
+            title: 'Home Buyers',
+            quote: 'I want to buy pure, local honey and pay quickly with M-Pesa.',
+            seeking: 'Trust & Easy Payment',
+          },
+          {
+            icon: 'clipboard',
+            title: 'Beekeepers',
+            quote: 'I need reliable equipment and training to start or grow my apiary.',
+            seeking: 'Equipment & Guidance',
+          },
+          {
+            icon: 'building',
+            title: 'Bulk Buyers',
+            quote: 'I want to request quotes and order in bulk for my business or institution.',
+            seeking: 'Quotes & Volume',
+          },
+        ],
+      },
+      making: {
+        label: 'Section 4: Design to Code',
+        heading: 'From Figma to a Working Store',
+        text: 'The first Figma design set the structure: hero, about, products, values and contact. As the brief grew into a full store, I evolved the design into a warmer cream-and-gold look and added product pages, a cart, checkout and an admin area.',
+        items: [
+          {
+            title: 'Product cards',
+            text: 'One reusable card component for every product, with category, price, stock status and add to cart.',
+          },
+          {
+            title: 'Live updates',
+            text: 'Shop pages refresh automatically when the admin changes a product, so prices and stock stay current.',
+          },
+        ],
+        image: '/images/pedni-design-3-products.jpg',
+      },
+      final: {
+        label: 'Section 5: The Final Product',
+        heading: 'A Store Built for Kenyan Customers',
+        text: 'The platform brings shopping, payment and store management together: customers browse and pay with M-Pesa, and the team runs everything from one dashboard.',
+        shots: [
+          {
+            image: '/images/pedni-hero.jpg',
+            title: 'Homepage',
+            text: 'A warm, honey-toned landing page that leads straight to the products.',
+          },
+          {
+            image: '/images/pedni-shop.jpg',
+            title: 'Shop',
+            text: 'Category filters and search across beekeeping equipment, with stock shown on every card.',
+          },
+        ],
+        highlights: [
+          'M-Pesa STK Push checkout with payment confirmation',
+          'Admin dashboard for products, orders, reviews and training requests',
+          'Customer accounts with order tracking',
+          'Product reviews with admin verification',
+        ],
+      },
+    },
   },
 ]
 
