@@ -350,8 +350,7 @@ export type Exploration = { title: string; type: string; image?: string; badge?:
 export const explorations: Exploration[] = [
   {
     title: 'Mchezaji Platform',
-    type: 'My own concept for a grassroots sports platform connecting young athletes with scouts and teams.',
-    badge: 'Concept',
+    type: 'Grassroots sports platform connecting young athletes with scouts and teams.',
     image: '/images/mchezaji.jpg',
     accent: 'from-sky-400 to-emerald-400',
   },
