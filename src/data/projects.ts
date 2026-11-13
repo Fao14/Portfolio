@@ -345,12 +345,13 @@ export const projects: Project[] = [
 // Figma explorations shown on the Projects page.
 // image: a picture of the design (put it in public/images). Without one, a coloured placeholder shows.
 // Clicking a card opens the picture larger on the page.
-export type Exploration = { title: string; type: string; image?: string; accent: string }
+export type Exploration = { title: string; type: string; image?: string; badge?: string; accent: string }
 
 export const explorations: Exploration[] = [
   {
     title: 'Mchezaji Platform',
-    type: 'Grassroots sports platform for athletes, scouts and teams',
+    type: 'My own concept for a grassroots sports platform connecting young athletes with scouts and teams.',
+    badge: 'Concept',
     image: '/images/mchezaji.jpg',
     accent: 'from-sky-400 to-emerald-400',
   },

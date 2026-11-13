@@ -108,7 +108,14 @@ export function Projects() {
                 )}
               </div>
               <div className="p-5">
-                <h3 className="font-bold group-hover:text-brand">{e.title}</h3>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="font-bold group-hover:text-brand">{e.title}</h3>
+                  {e.badge && (
+                    <span className="rounded-full bg-sky-100 px-2 py-0.5 text-[11px] font-semibold text-sky-800">
+                      {e.badge}
+                    </span>
+                  )}
+                </div>
                 <p className="text-sm text-muted">{e.type}</p>
               </div>
             </button>
@@ -135,7 +142,10 @@ export function Projects() {
           <figure className="max-h-full w-full max-w-5xl overflow-auto rounded-2xl bg-white shadow-2xl" onClick={(ev) => ev.stopPropagation()}>
             <img src={open.image} alt={`${open.title} design`} className="w-full" />
             <figcaption className="p-5">
-              <p className="font-bold">{open.title}</p>
+              <p className="font-bold">
+                {open.title}
+                {open.badge && <span className="ml-2 rounded-full bg-sky-100 px-2 py-0.5 text-[11px] font-semibold text-sky-800">{open.badge}</span>}
+              </p>
               <p className="text-sm text-muted">{open.type}</p>
             </figcaption>
           </figure>
