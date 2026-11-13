@@ -84,10 +84,10 @@ export function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <Eyebrow>Selected Work</Eyebrow>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Client work</h2>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Projects</h2>
             </div>
             <Link to="/projects" className="flex items-center gap-1 text-sm font-semibold text-brand hover:underline">
-              See projects <Icon name="arrowRight" className="size-4" />
+              View more <Icon name="arrowRight" className="size-4" />
             </Link>
           </div>
 
@@ -120,7 +120,7 @@ export function Home() {
                     <h3 className="mt-1 text-lg font-bold">
                       <CardLink internal={internal} to={cardLink} className="hover:text-brand">{p.name}</CardLink>
                     </h3>
-                    <p className="mt-2 text-sm text-body">{p.summary}</p>
+                    <p className="mt-2 text-sm text-body">{p.short}</p>
                     {internal ? (
                       <Link
                         to={cardLink}

@@ -59,6 +59,8 @@ export type Project = {
   client: string
   category: string
   summary: string
+  // One short line for the home page cards.
+  short: string
   detail: string
   stack: string[]
   image: string
@@ -74,6 +76,7 @@ export const projects: Project[] = [
     name: 'GMA Sports & Business',
     client: 'GMA Global Sports & Business Advisory',
     category: 'Multi-page website · React',
+    short: 'Multi-page website for a Nairobi sports and business consultancy.',
     summary:
       'Designed and developed a multi-page React website for a Nairobi sports and business consultancy, with two service divisions, eight services and a consultation-booking flow.',
     detail:
@@ -202,6 +205,7 @@ export const projects: Project[] = [
     name: 'Afritech Sports',
     client: 'Afritech Sports Technology & Innovation Group',
     category: 'Company website · React',
+    short: 'Company website for a pan-African sports technology firm.',
     summary:
       'Designed and built the company website for a pan-African sports technology firm: device showcase, six-country footprint and a lead-capture enquiry form.',
     detail:
@@ -330,6 +334,7 @@ export const projects: Project[] = [
     name: 'Pedni Honey',
     client: 'Pedni Honey',
     category: 'Full-stack e-commerce',
+    short: 'Full-stack store with M-Pesa checkout for a beekeeping business.',
     summary:
       'Full-stack e-commerce platform for a beekeeping supplies business: React front end, FastAPI and PostgreSQL back end, and M-Pesa checkout.',
     detail:
