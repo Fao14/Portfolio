@@ -361,4 +361,16 @@ export const explorations: Exploration[] = [
     image: '/images/pedni-figma.jpg',
     accent: 'from-amber-300 to-amber-500',
   },
+  {
+    title: 'Onboarding & Profile App',
+    type: 'Mobile app flow from onboarding to login to a user profile, with bold editorial typography.',
+    image: '/images/onboarding-app.jpg',
+    accent: 'from-lime-300 to-emerald-400',
+  },
+  {
+    title: 'Sign-up & Login Flow',
+    type: 'Mobile authentication flow: email-first entry, social sign-in, account creation and returning-user login.',
+    image: '/images/signup-flow.jpg',
+    accent: 'from-emerald-400 to-zinc-800',
+  },
 ]
