@@ -12,7 +12,7 @@ export function CaseStudy({ project }: { project: Project }) {
   useEffect(() => {
     document.title = `${project.name} Case Study | Faith Ouma`
     return () => {
-      document.title = 'Faith Ouma | Developer & UI/UX Designer'
+      document.title = 'Faith Ouma | UI/UX Designer & Developer'
     }
   }, [project])
 

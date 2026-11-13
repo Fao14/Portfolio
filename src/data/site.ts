@@ -4,7 +4,7 @@ export const site = {
   name: 'Faith Ouma',
   firstName: 'Faith',
   lastName: 'Ouma',
-  role: 'Developer & UI/UX Designer',
+  role: 'UI/UX Designer & Developer',
   intro:
     "I'm a UI/UX designer and developer based in Nairobi, and a Business Information Technology student at Co-operative University of Kenya. I design and build full-stack products end to end.",
   heroStack: ['React', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'PostgreSQL'],
