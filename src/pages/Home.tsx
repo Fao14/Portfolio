@@ -87,7 +87,7 @@ export function Home() {
               <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Client work</h2>
             </div>
             <Link to="/projects" className="flex items-center gap-1 text-sm font-semibold text-brand hover:underline">
-              All projects <Icon name="arrowRight" className="size-4" />
+              See projects <Icon name="arrowRight" className="size-4" />
             </Link>
           </div>
 
