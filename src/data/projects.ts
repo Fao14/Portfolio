@@ -75,7 +75,7 @@ export const projects: Project[] = [
     client: 'GMA Global Sports & Business Advisory',
     category: 'Multi-page website · React',
     summary:
-      'I developed a multi-page website for a Nairobi consultancy covering sports advisory, business strategy and sports, entertainment and fashion law.',
+      'Designed and developed a multi-page React website for a Nairobi sports and business consultancy, with two service divisions, eight services and a consultation-booking flow.',
     detail:
       'Built with React and Tailwind CSS from my own Figma design: a responsive layout, a services dropdown split by division, a scrolling partner ribbon and section-by-section navigation. Deployed on Vercel.',
     stack: ['React', 'Tailwind CSS', 'Vercel', 'Figma'],
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     client: 'Afritech Sports Technology & Innovation Group',
     category: 'Company website · React',
     summary:
-      'I developed the company website for a pan-African sports technology firm that distributes performance devices and advises teams, federations and governments.',
+      'Designed and built the company website for a pan-African sports technology firm: device showcase, six-country footprint and a lead-capture enquiry form.',
     detail:
       'Built with React and Tailwind CSS: device product cards, a six-country footprint section, insights articles and a detailed enquiry form with dropdowns, multi-select and a required consent checkbox.',
     stack: ['React', 'Tailwind CSS', 'Figma'],
@@ -331,7 +331,7 @@ export const projects: Project[] = [
     client: 'Pedni Honey',
     category: 'Full-stack e-commerce',
     summary:
-      'I am building a full-stack e-commerce platform for a beekeeping supplies business: product catalogue, cart and M-Pesa checkout, plus training, bulk-order and consultation requests.',
+      'Full-stack e-commerce platform for a beekeeping supplies business: React front end, FastAPI and PostgreSQL back end, and M-Pesa checkout.',
     detail:
       'React and Tailwind CSS front end talking to a REST API I built with FastAPI (Python), backed by a PostgreSQL database, with M-Pesa payments at checkout.',
     stack: ['React', 'Tailwind CSS', 'FastAPI', 'Python', 'PostgreSQL', 'REST API', 'M-Pesa'],

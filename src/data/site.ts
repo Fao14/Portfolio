@@ -6,29 +6,28 @@ export const site = {
   lastName: 'Ouma',
   role: 'Developer & UI/UX Designer',
   intro:
-    'I build fast, responsive websites and web apps with React, TypeScript and Tailwind CSS, and I design them in Figma first so they are easy to use.',
+    "I build fast, responsive websites and web apps with React, TypeScript and Tailwind CSS, back them with FastAPI and PostgreSQL, and design them in Figma first so they're easy to use.",
   heroStack: ['React', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'PostgreSQL'],
   location: 'Nairobi, Kenya',
   email: 'faithouma003@gmail.com',
   // Shown in the footer. Use the format you want visitors to see.
-  phone: '0728 311 097',
-  phoneHref: 'tel:+254728311097',
+  phone: '0726 311 097',
+  phoneHref: 'tel:+254726311097',
   linkedin: 'https://www.linkedin.com/in/faith-ouma-5565b2280',
   github: 'https://github.com/Fao14',
   photo: '/images/faith.jpg',
   availableForWork: true,
 
   about:
-    "I'm a developer who builds responsive websites and web apps with React, TypeScript and Tailwind CSS. I've shipped live sites for clients in sports tech, consultancy and e-commerce, and I'm building a full-stack store with a FastAPI back end, PostgreSQL and M-Pesa payments. My UI/UX background means I design in Figma before I code, so what I build is easy to use as well as solid.",
+    "I've delivered websites for clients in sports technology, consultancy and e-commerce, from Figma design through to deployment, including a full-stack store with a FastAPI back end, PostgreSQL and M-Pesa payments.",
 
   stats: [
-    { label: 'Projects Completed', value: '3' },
-    { label: 'Experience', value: '1½ Years' },
-    { label: 'Happy Clients', value: '3' },
+    { label: 'Live client sites', value: '2' },
+    { label: 'Clients', value: '3' },
+    { label: 'Designing since', value: '2023' },
   ],
 
-  footerBlurb:
-    "Building fast, responsive web experiences from design to deployment. Let's work together to create something amazing.",
+  footerBlurb: 'Websites and web apps, from design to deployment.',
 }
 
 export const skills = [
@@ -50,7 +49,7 @@ export const skills = [
   {
     icon: 'card',
     title: 'Payments',
-    text: 'M-Pesa checkout integrated into an e-commerce flow.',
+    text: "M-Pesa checkout integration with Safaricom's Daraja API.",
   },
   {
     icon: 'rocket',

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { projects } from '../data/projects'
 import { site, skills } from '../data/site'
 import { Link } from '../router'
@@ -11,7 +12,7 @@ export function Home() {
       <section className="overflow-hidden">
         <Container className="grid items-center gap-12 py-14 md:grid-cols-[1.1fr_1fr] md:py-24">
           <div>
-            {site.availableForWork && <Pill>Available for work</Pill>}
+            {site.availableForWork && <Pill>Open to new opportunities</Pill>}
             <h1 className="mt-5 text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-7xl">
               {site.firstName}
               <br />
@@ -89,7 +90,7 @@ export function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <Eyebrow>Selected Work</Eyebrow>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Live client websites</h2>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Client work</h2>
             </div>
             <Link to="/projects" className="flex items-center gap-1 text-sm font-semibold text-brand hover:underline">
               All projects <Icon name="arrowRight" className="size-4" />
@@ -97,30 +98,72 @@ export function Home() {
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {projects.map((p) => (
-              <Link
-                key={p.slug}
-                to={p.caseStudy ? `/projects/${p.slug}` : '/projects'}
-                className="group overflow-hidden rounded-2xl border border-line bg-white transition-shadow hover:shadow-xl hover:shadow-ink/5"
-              >
-                <div className="aspect-[16/10] overflow-hidden bg-canvas">
-                  <img
-                    src={p.image}
-                    alt={`${p.name} website`}
-                    loading="lazy"
-                    className="size-full object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
-                  />
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-brand">{p.category}</p>
-                  <h3 className="mt-1 text-lg font-bold">{p.name}</h3>
-                  <p className="mt-2 line-clamp-2 text-sm text-body">{p.summary}</p>
-                </div>
-              </Link>
-            ))}
+            {projects.map((p) => {
+              const internal = !!p.caseStudy
+              const cardLink = internal ? `/projects/${p.slug}` : p.liveUrl
+              return (
+                <article
+                  key={p.slug}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-white transition-shadow hover:shadow-xl hover:shadow-ink/5"
+                >
+                  <CardLink internal={internal} to={cardLink} className="block aspect-[16/10] overflow-hidden bg-canvas">
+                    <img
+                      src={p.image}
+                      alt={`${p.name} website`}
+                      loading="lazy"
+                      className="size-full object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                  </CardLink>
+                  <div className="flex flex-1 flex-col p-5">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-brand">{p.category}</p>
+                      {p.status && (
+                        <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-800">
+                          {p.status}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="mt-1 text-lg font-bold">
+                      <CardLink internal={internal} to={cardLink} className="hover:text-brand">{p.name}</CardLink>
+                    </h3>
+                    <p className="mt-2 text-sm text-body">{p.summary}</p>
+                    <a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex items-center gap-1 self-start text-sm font-semibold text-brand hover:underline"
+                    >
+                      View site <Icon name="arrowUpRight" className="size-4" />
+                    </a>
+                  </div>
+                </article>
+              )
+            })}
           </div>
         </Container>
       </section>
     </>
+  )
+}
+
+function CardLink({
+  internal,
+  to,
+  className,
+  children,
+}: {
+  internal: boolean
+  to: string
+  className?: string
+  children: ReactNode
+}) {
+  return internal ? (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  ) : (
+    <a href={to} target="_blank" rel="noreferrer" className={className}>
+      {children}
+    </a>
   )
 }
