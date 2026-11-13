@@ -364,9 +364,9 @@ export const projects: Project[] = [
           'Checkout built around M-Pesa, the way Kenyan customers pay',
           'An admin dashboard for products, orders, reviews and training requests',
         ],
-        image: '/images/pedni-figma.jpg',
-        imageCaptionLabel: 'Early design',
-        imageCaption: 'First Figma concept for the homepage',
+        image: '/images/pedni-hero.jpg',
+        imageCaptionLabel: 'Live site',
+        imageCaption: "Nature's Golden Gift",
       },
       build: {
         label: 'Section 2: The Build',
@@ -418,7 +418,7 @@ export const projects: Project[] = [
       making: {
         label: 'Section 4: Design to Code',
         heading: 'From Figma to a Working Store',
-        text: 'The first Figma design set the structure: hero, about, products, values and contact. As the brief grew into a full store, I evolved the design into a warmer cream-and-gold look and added product pages, a cart, checkout and an admin area.',
+        text: 'I designed every page in Figma first, then built it as reusable React components: a warm cream-and-gold look, clear sections for products and services, and simple paths to the cart, checkout and training requests.',
         items: [
           {
             title: 'Product cards',
@@ -429,7 +429,7 @@ export const projects: Project[] = [
             text: 'Shop pages refresh automatically when the admin changes a product, so prices and stock stay current.',
           },
         ],
-        image: '/images/pedni-design-3-products.jpg',
+        image: '/images/pedni-why.jpg',
       },
       final: {
         label: 'Section 5: The Final Product',
@@ -437,9 +437,9 @@ export const projects: Project[] = [
         text: 'The platform brings shopping, payment and store management together: customers browse and pay with M-Pesa, and the team runs everything from one dashboard.',
         shots: [
           {
-            image: '/images/pedni-hero.jpg',
-            title: 'Homepage',
-            text: 'A warm, honey-toned landing page that leads straight to the products.',
+            image: '/images/pedni-services.jpg',
+            title: 'Services',
+            text: 'Training, bulk orders and consultations, each with its own request flow.',
           },
           {
             image: '/images/pedni-shop.jpg',
