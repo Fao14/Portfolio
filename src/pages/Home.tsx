@@ -121,14 +121,23 @@ export function Home() {
                       <CardLink internal={internal} to={cardLink} className="hover:text-brand">{p.name}</CardLink>
                     </h3>
                     <p className="mt-2 text-sm text-body">{p.summary}</p>
-                    <a
-                      href={p.liveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex items-center gap-1 self-start text-sm font-semibold text-brand hover:underline"
-                    >
-                      View site <Icon name="arrowUpRight" className="size-4" />
-                    </a>
+                    {internal ? (
+                      <Link
+                        to={cardLink}
+                        className="mt-auto inline-flex items-center gap-1 self-start pt-4 text-sm font-semibold text-brand hover:underline"
+                      >
+                        Read case study <Icon name="arrowRight" className="size-4" />
+                      </Link>
+                    ) : (
+                      <a
+                        href={p.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-auto inline-flex items-center gap-1 self-start pt-4 text-sm font-semibold text-brand hover:underline"
+                      >
+                        View site <Icon name="arrowUpRight" className="size-4" />
+                      </a>
+                    )}
                   </div>
                 </article>
               )
