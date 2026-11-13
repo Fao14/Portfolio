@@ -1,9 +1,24 @@
-import { explorations, projects } from '../data/projects'
+import { useEffect, useState } from 'react'
+import { explorations, projects, type Exploration } from '../data/projects'
 import { coreSkills, experience, tools } from '../data/site'
 import { Icon } from '../components/Icon'
 import { Button, Container, Eyebrow, Tag } from '../components/ui'
 
 export function Projects() {
+  const [open, setOpen] = useState<Exploration | null>(null)
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(null)
+    document.addEventListener('keydown', onKey)
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = prev
+    }
+  }, [open])
+
   return (
     <>
       <Container className="pt-14 pb-6 md:pt-20">
@@ -66,45 +81,66 @@ export function Projects() {
         </div>
       </Container>
 
-      {/* Figma explorations */}
+      {/* Design explorations */}
       <Container className="py-10">
         <h2 className="text-xl font-bold">Design Explorations</h2>
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
-          {explorations.map((e) => {
-            const picture = e.image ? (
-              <img
-                src={e.image}
-                alt={`${e.title} design in Figma`}
-                loading="lazy"
-                className="aspect-[16/9] w-full border-b border-line object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
-              />
-            ) : (
-              <div className={`grid aspect-[16/9] place-items-center bg-gradient-to-br ${e.accent}`}>
-                <Icon name="figma" className="size-10 text-white/90" strokeWidth={1.5} />
+          {explorations.map((e) => (
+            <button
+              key={e.title}
+              type="button"
+              onClick={() => e.image && setOpen(e)}
+              className="group block overflow-hidden rounded-2xl border border-line bg-white text-left transition-shadow hover:shadow-xl hover:shadow-ink/5"
+              aria-label={`View ${e.title} design larger`}
+            >
+              <div className="overflow-hidden">
+                {e.image ? (
+                  <img
+                    src={e.image}
+                    alt={`${e.title} design`}
+                    loading="lazy"
+                    className="aspect-[16/9] w-full border-b border-line object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                ) : (
+                  <div className={`grid aspect-[16/9] place-items-center bg-gradient-to-br ${e.accent}`}>
+                    <Icon name="figma" className="size-10 text-white/90" strokeWidth={1.5} />
+                  </div>
+                )}
               </div>
-            )
-            const body = (
-              <>
-                <div className="overflow-hidden">{picture}</div>
-                <div className="p-5">
-                  <h3 className="font-bold group-hover:text-brand">{e.title}</h3>
-                  <p className="text-sm text-muted">{e.type}</p>
-                </div>
-              </>
-            )
-            const cls = 'group block overflow-hidden rounded-2xl border border-line bg-white'
-            return e.figmaUrl ? (
-              <a key={e.title} href={e.figmaUrl} target="_blank" rel="noreferrer" className={`${cls} transition-shadow hover:shadow-xl hover:shadow-ink/5`}>
-                {body}
-              </a>
-            ) : (
-              <div key={e.title} className={cls}>
-                {body}
+              <div className="p-5">
+                <h3 className="font-bold group-hover:text-brand">{e.title}</h3>
+                <p className="text-sm text-muted">{e.type}</p>
               </div>
-            )
-          })}
+            </button>
+          ))}
         </div>
       </Container>
+
+      {open?.image && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${open.title} design`}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/80 p-4 backdrop-blur-sm sm:p-10"
+          onClick={() => setOpen(null)}
+        >
+          <button
+            type="button"
+            onClick={() => setOpen(null)}
+            className="absolute top-4 right-4 grid size-10 place-items-center rounded-full bg-white text-ink shadow-lg hover:text-brand"
+            aria-label="Close"
+          >
+            <Icon name="close" className="size-5" />
+          </button>
+          <figure className="max-h-full w-full max-w-5xl overflow-auto rounded-2xl bg-white shadow-2xl" onClick={(ev) => ev.stopPropagation()}>
+            <img src={open.image} alt={`${open.title} design`} className="w-full" />
+            <figcaption className="p-5">
+              <p className="font-bold">{open.title}</p>
+              <p className="text-sm text-muted">{open.type}</p>
+            </figcaption>
+          </figure>
+        </div>
+      )}
 
       {/* Experience & skills */}
       <Container className="pt-10 pb-20">

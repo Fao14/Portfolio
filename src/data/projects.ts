@@ -344,22 +344,20 @@ export const projects: Project[] = [
 
 // Figma explorations shown on the Projects page.
 // image: a picture of the design (put it in public/images). Without one, a coloured placeholder shows.
-// figmaUrl: optional. If set, clicking the picture opens the Figma file.
-type Exploration = { title: string; type: string; image?: string; figmaUrl?: string; accent: string }
+// Clicking a card opens the picture larger on the page.
+export type Exploration = { title: string; type: string; image?: string; accent: string }
 
 export const explorations: Exploration[] = [
   {
     title: 'Mchezaji Platform',
     type: 'Grassroots sports platform for athletes, scouts and teams',
     image: '/images/mchezaji.jpg',
-    figmaUrl: 'https://www.figma.com/design/Cu6YD1gtXrnr6663C1OFA4/MCHEZAJI?t=Pgkx2sTI9cnGaudm-0',
     accent: 'from-sky-400 to-emerald-400',
   },
   {
     title: 'Pedni Honey',
-    type: 'Honey e-commerce website',
-    image: '/images/pedni-hero.jpg',
-    figmaUrl: 'https://pedni-honey.vercel.app/',
+    type: 'Early Figma design for a honey e-commerce website',
+    image: '/images/pedni-figma.jpg',
     accent: 'from-amber-300 to-amber-500',
   },
 ]
