@@ -37,15 +37,6 @@ export function Footer() {
               >
                 <Icon name="linkedin" />
               </a>
-              <a
-                href={site.github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-                className="grid size-10 place-items-center rounded-xl border border-line text-body transition-colors hover:border-brand hover:text-brand"
-              >
-                <Icon name="github" />
-              </a>
             </div>
           </div>
           <div>
