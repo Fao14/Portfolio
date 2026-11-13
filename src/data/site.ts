@@ -34,24 +34,24 @@ export const site = {
 
 export const skills = [
   {
-    icon: 'pointer',
-    title: 'UI/UX Design',
-    text: 'Wireframes and prototypes in Figma before a line of code.',
+    icon: 'figma',
+    title: 'UI Design',
+    text: 'High-fidelity interfaces and interactive prototypes in Figma and Framer.',
+  },
+  {
+    icon: 'users',
+    title: 'UX Design',
+    text: 'User research, user stories, user flows and wireframes that shape what gets built.',
   },
   {
     icon: 'code',
     title: 'Front-End Development',
-    text: 'React, TypeScript and JavaScript apps built from reusable components.',
-  },
-  {
-    icon: 'layers',
-    title: 'Responsive UI',
-    text: 'Mobile-first layouts with Tailwind CSS that work on every screen.',
+    text: 'React and TypeScript apps built from reusable components, with mobile-first Tailwind CSS layouts that work on every screen.',
   },
   {
     icon: 'server',
     title: 'APIs & Back-End',
-    text: 'REST APIs built with FastAPI and PostgreSQL, and integration with third-party APIs.',
+    text: 'REST APIs built with FastAPI and PostgreSQL.',
   },
   {
     icon: 'card',
