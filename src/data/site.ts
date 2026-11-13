@@ -17,8 +17,11 @@ export const site = {
   photo: '/images/faith.jpg',
   availableForWork: true,
 
-  about:
-    "I've delivered websites for clients in sports technology, consultancy and e-commerce, from Figma design through to deployment, including a full-stack store with a FastAPI back end, PostgreSQL and M-Pesa payments.",
+  about: [
+    "My journey into tech started in 2023, when I taught myself UI/UX design. I began with the fundamentals (design principles and user research), then practised on small projects: writing user stories, mapping user flows, and learning how to turn what a client asks for into something people can actually use. Along the way I learned to look at the market too, and to design for the business as well as the user.",
+    "From there I wanted to build what I designed, so I learned front-end and then back-end development. In 2025 I started freelancing and took on my first clients. In 2026 I joined Little as a UI/UX design and front-end development intern, where I moved from designing interfaces to building them in production code with React and TypeScript.",
+    "Today I take projects from the first idea and wireframe all the way to a live product.",
+  ],
 
   stats: [
     { label: 'Live client sites', value: '2' },

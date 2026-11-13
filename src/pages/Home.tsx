@@ -47,7 +47,11 @@ export function Home() {
         <Container className="py-16 md:py-20">
           <Eyebrow>The Story</Eyebrow>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-body">{site.about}</p>
+          <div className="mt-5 max-w-2xl space-y-4 text-lg leading-relaxed text-body">
+            {site.about.map((para) => (
+              <p key={para.slice(0, 24)}>{para}</p>
+            ))}
+          </div>
 
           <dl className="mt-10 grid max-w-2xl grid-cols-3 gap-3 sm:gap-4">
             {site.stats.map((s) => (
