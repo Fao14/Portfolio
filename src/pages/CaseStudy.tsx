@@ -6,8 +6,12 @@ import { BrowserFrame, Button, Container, Eyebrow, Pill } from '../components/ui
 
 export function CaseStudy({ project }: { project: Project }) {
   const cs = project.caseStudy!
-  const host = new URL(project.liveUrl).host.replace(/^www\./, '')
-  const others = projects.filter((p) => p.slug !== project.slug && p.caseStudy)
+  // Show the real domain in the browser frames; for preview hosting addresses show the project name instead.
+  const rawHost = new URL(project.liveUrl).host.replace(/^www\./, '')
+  const host = rawHost.endsWith('.vercel.app') ? project.name : rawHost
+  const withCaseStudy = projects.filter((p) => p.caseStudy)
+  const next = withCaseStudy[(withCaseStudy.findIndex((p) => p.slug === project.slug) + 1) % withCaseStudy.length]
+  const others = next && next.slug !== project.slug ? [next] : []
 
   useEffect(() => {
     document.title = `${project.name} Case Study | Faith Ouma`
