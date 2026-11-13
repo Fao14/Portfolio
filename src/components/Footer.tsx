@@ -71,9 +71,6 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-14 border-t border-line pt-6 text-xs text-muted">
-          © {new Date().getFullYear()} {site.name}. Designed in Figma, built with React & Tailwind CSS.
-        </p>
       </Container>
     </footer>
   )
