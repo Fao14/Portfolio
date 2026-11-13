@@ -20,16 +20,6 @@ export function Home() {
             </h1>
             <p className="mt-6 text-lg font-semibold text-ink">{site.role}</p>
             <p className="mt-2 max-w-md text-lg leading-relaxed text-body">{site.intro}</p>
-            <ul className="mt-5 flex flex-wrap gap-2" aria-label="Main technologies">
-              {site.heroStack.map((t) => (
-                <li
-                  key={t}
-                  className="rounded-lg border border-line bg-white px-2.5 py-1 font-mono text-xs font-medium text-ink"
-                >
-                  {t}
-                </li>
-              ))}
-            </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button to="/projects">View Projects</Button>
               <Button href={`mailto:${site.email}`} variant="ghost" icon="mail">

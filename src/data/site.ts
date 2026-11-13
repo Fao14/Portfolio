@@ -7,7 +7,6 @@ export const site = {
   role: 'UI/UX Designer & Developer',
   intro:
     "I'm a UI/UX designer and developer based in Nairobi, and a Business Information Technology student at Co-operative University of Kenya. I design and build full-stack products end to end.",
-  heroStack: ['React', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'PostgreSQL'],
   location: 'Nairobi, Kenya',
   email: 'faithouma003@gmail.com',
   // Shown in the footer. Use the format you want visitors to see.
