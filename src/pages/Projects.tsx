@@ -140,14 +140,22 @@ export function Projects() {
             <Icon name="close" className="size-5" />
           </button>
           <figure className="max-h-full w-full max-w-5xl overflow-auto rounded-2xl bg-white shadow-2xl" onClick={(ev) => ev.stopPropagation()}>
-            <img src={open.image} alt={`${open.title} design`} className="w-full" />
-            <figcaption className="p-5">
+            <figcaption className="sticky top-0 z-10 border-b border-line bg-white/95 p-5 pr-14 backdrop-blur">
               <p className="font-bold">
                 {open.title}
                 {open.badge && <span className="ml-2 rounded-full bg-sky-100 px-2 py-0.5 text-[11px] font-semibold text-sky-800">{open.badge}</span>}
               </p>
               <p className="text-sm text-muted">{open.type}</p>
             </figcaption>
+            {(open.gallery ?? [open.image]).map((src, i) => (
+              <img
+                key={src}
+                src={src}
+                alt={`${open.title} design, section ${i + 1}`}
+                loading={i < 2 ? 'eager' : 'lazy'}
+                className="block w-full"
+              />
+            ))}
           </figure>
         </div>
       )}

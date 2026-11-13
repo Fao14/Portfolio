@@ -345,19 +345,46 @@ export const projects: Project[] = [
 // Figma explorations shown on the Projects page.
 // image: a picture of the design (put it in public/images). Without one, a coloured placeholder shows.
 // Clicking a card opens the picture larger on the page.
-export type Exploration = { title: string; type: string; image?: string; badge?: string; accent: string }
+export type Exploration = {
+  title: string
+  type: string
+  image?: string
+  // Section snapshots shown one after another when the card is opened.
+  gallery?: string[]
+  badge?: string
+  accent: string
+}
 
 export const explorations: Exploration[] = [
   {
     title: 'Mchezaji Platform',
     type: 'Grassroots sports platform connecting young athletes with scouts and teams.',
     image: '/images/mchezaji.jpg',
+    gallery: [
+      '/images/mchezaji-design-01-hero.jpg',
+      '/images/mchezaji-design-02-sports.jpg',
+      '/images/mchezaji-design-03-level-up.jpg',
+      '/images/mchezaji-design-04-built-for-everyone.jpg',
+      '/images/mchezaji-design-05-analytics.jpg',
+      '/images/mchezaji-design-06-learn.jpg',
+      '/images/mchezaji-design-07-scouting.jpg',
+      '/images/mchezaji-design-08-team.jpg',
+      '/images/mchezaji-design-09-community.jpg',
+      '/images/mchezaji-design-10-footer.jpg',
+    ],
     accent: 'from-sky-400 to-emerald-400',
   },
   {
     title: 'Pedni Honey',
     type: 'Early Figma design for a honey e-commerce website',
     image: '/images/pedni-figma.jpg',
+    gallery: [
+      '/images/pedni-design-1-hero.jpg',
+      '/images/pedni-design-2-about.jpg',
+      '/images/pedni-design-3-products.jpg',
+      '/images/pedni-design-4-values.jpg',
+      '/images/pedni-design-5-contact.jpg',
+    ],
     accent: 'from-amber-300 to-amber-500',
   },
   {
