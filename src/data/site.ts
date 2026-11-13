@@ -6,7 +6,7 @@ export const site = {
   lastName: 'Ouma',
   role: 'Developer & UI/UX Designer',
   intro:
-    "I build fast, responsive websites and web apps with React, TypeScript and Tailwind CSS, back them with FastAPI and PostgreSQL, and design them in Figma first so they're easy to use.",
+    "I'm a UI/UX designer and developer based in Nairobi, and a Business Information Technology student at Co-operative University of Kenya. I design and build full-stack products end to end.",
   heroStack: ['React', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'PostgreSQL'],
   location: 'Nairobi, Kenya',
   email: 'faithouma003@gmail.com',
