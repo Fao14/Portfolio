@@ -70,7 +70,7 @@ export const experience = [
     role: 'Freelance Developer & UI/UX Designer',
     org: 'Self-employed',
     period: 'Nov 2025 – Present',
-    text: 'Building websites end to end for clients in sports tech, consultancy and e-commerce: React and Tailwind front ends, a FastAPI and PostgreSQL back end with M-Pesa payments, and deployment on Vercel. Each project starts as a Figma design.',
+    text: 'Building websites end to end for clients in sports tech, consultancy and e-commerce: React and Tailwind front ends, a FastAPI and PostgreSQL back end with M-Pesa payments. Each project starts as a Figma design.',
   },
   {
     role: 'UI/UX Design & Front-End Development Intern',

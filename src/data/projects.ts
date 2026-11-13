@@ -80,8 +80,8 @@ export const projects: Project[] = [
     summary:
       'Designed and developed a multi-page React website for a Nairobi sports and business consultancy, with two service divisions, eight services and a consultation-booking flow.',
     detail:
-      'Built with React and Tailwind CSS from my own Figma design: a responsive layout, a services dropdown split by division, a scrolling partner ribbon and section-by-section navigation. Deployed on Vercel.',
-    stack: ['React', 'Tailwind CSS', 'Vercel', 'Figma'],
+      'Built with React and Tailwind CSS from my own Figma design: a responsive layout, a services dropdown split by division, a scrolling partner ribbon and section-by-section navigation.',
+    stack: ['React', 'Tailwind CSS', 'Figma'],
     image: '/images/gma-hero.jpg',
     liveUrl: 'https://gma-website-fikn.vercel.app/',
     year: '2026',
@@ -94,7 +94,7 @@ export const projects: Project[] = [
         { label: 'Role', value: 'Developer & UI/UX Designer' },
         { label: 'Stack', value: 'React, Tailwind CSS' },
         { label: 'Timeline', value: 'Aug 2026 – Present' },
-        { label: 'Hosting', value: 'Live on Vercel' },
+        { label: 'Status', value: 'Live' },
       ],
       brief: {
         label: 'Section 1: The Brief',
@@ -112,7 +112,7 @@ export const projects: Project[] = [
       build: {
         label: 'Section 2: The Build',
         heading: 'From Figma to Production',
-        text: 'I designed the site in Figma and then developed it myself in React with Tailwind CSS, so the code follows the design closely. It is deployed on Vercel and stays live there until the client moves it to their own domain.',
+        text: 'I designed the site in Figma and then developed it myself in React with Tailwind CSS, so the code follows the design closely.',
         items: [
           {
             title: 'Responsive layouts',
@@ -128,7 +128,7 @@ export const projects: Project[] = [
           },
           {
             title: 'Deployment',
-            text: 'Hosted on Vercel, so each update I push goes live without manual uploads.',
+            text: 'Automated deployments, so each update I push goes live without manual uploads.',
           },
         ],
       },
