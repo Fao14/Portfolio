@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <h2 className="text-2xl font-bold sm:text-3xl">Planning a website or system?</h2>
             <p className="mt-2 max-w-md text-white/70">
-              Book a free consultation. I'll help you shape the idea, plan the features and choose the right approach, then design and build it from start to finish.
+              Book a consultation. I'll help you shape the idea, plan the features and choose the right approach, then design and build it from start to finish.
             </p>
           </div>
           <a
@@ -19,7 +19,7 @@ export function Footer() {
             className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-dark"
           >
             <Icon name="mail" className="size-5" />
-            Book a free consultation
+            Book a consultation
           </a>
         </div>
 
