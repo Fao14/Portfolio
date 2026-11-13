@@ -34,6 +34,11 @@ export const site = {
 
 export const skills = [
   {
+    icon: 'pointer',
+    title: 'UI/UX Design',
+    text: 'Wireframes and prototypes in Figma before a line of code.',
+  },
+  {
     icon: 'code',
     title: 'Front-End Development',
     text: 'React, TypeScript and JavaScript apps built from reusable components.',
@@ -46,7 +51,7 @@ export const skills = [
   {
     icon: 'server',
     title: 'APIs & Back-End',
-    text: 'REST APIs with FastAPI and Node.js, backed by PostgreSQL.',
+    text: 'REST APIs built with FastAPI and PostgreSQL, and integration with third-party APIs.',
   },
   {
     icon: 'card',
@@ -57,11 +62,6 @@ export const skills = [
     icon: 'rocket',
     title: 'Deployment',
     text: 'Git and GitHub workflows with automatic deploys on Vercel.',
-  },
-  {
-    icon: 'pointer',
-    title: 'UI/UX Design',
-    text: 'Wireframes and prototypes in Figma before a line of code.',
   },
 ] as const
 
