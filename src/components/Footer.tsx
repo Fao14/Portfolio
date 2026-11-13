@@ -9,17 +9,17 @@ export function Footer() {
       <Container className="py-16">
         <div className="mb-14 flex flex-col items-start justify-between gap-6 rounded-3xl bg-ink px-8 py-10 text-white sm:px-12 md:flex-row md:items-center">
           <div>
-            <h2 className="text-2xl font-bold sm:text-3xl">Have a project in mind?</h2>
+            <h2 className="text-2xl font-bold sm:text-3xl">Planning a website or system?</h2>
             <p className="mt-2 max-w-md text-white/70">
-              I build websites and web apps end to end, from design to deployment. Tell me about your idea and let's make it real.
+              Book a free consultation. I'll help you shape the idea, plan the features and choose the right approach, then design and build it from start to finish.
             </p>
           </div>
           <a
-            href={`mailto:${site.email}`}
+            href={`mailto:${site.email}?subject=${encodeURIComponent('Consultation request')}`}
             className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-dark"
           >
             <Icon name="mail" className="size-5" />
-            Email Me
+            Book a free consultation
           </a>
         </div>
 
