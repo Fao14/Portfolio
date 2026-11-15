@@ -25,8 +25,8 @@ export function Projects() {
         <Eyebrow>Portfolio Showcase</Eyebrow>
         <h1 className="mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Projects & Experience</h1>
         <p className="mt-4 max-w-2xl text-lg text-body">
-          Websites and web apps I have developed for clients in sports tech, consultancy and e-commerce, from
-          React front ends to a FastAPI and PostgreSQL back end. Each one started as my own Figma design.
+          Websites and web apps I've designed and built for clients in sports technology, consultancy and
+          e-commerce.
         </p>
       </Container>
 

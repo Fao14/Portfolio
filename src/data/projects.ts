@@ -80,7 +80,7 @@ export const projects: Project[] = [
     summary:
       'Designed and developed a multi-page React website for a Nairobi sports and business consultancy, with two service divisions, eight services and a consultation-booking flow.',
     detail:
-      'Built with React and Tailwind CSS from my own Figma design: a responsive layout, a services dropdown split by division, a scrolling partner ribbon and section-by-section navigation.',
+      'Built with React and Tailwind CSS: a responsive layout, a services dropdown split by division, a scrolling partner ribbon and section-by-section navigation.',
     stack: ['React', 'Tailwind CSS', 'Figma'],
     image: '/images/gma-hero.jpg',
     liveUrl: 'https://gma-website-fikn.vercel.app/',
