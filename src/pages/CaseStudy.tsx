@@ -170,7 +170,7 @@ export function CaseStudy({ project }: { project: Project }) {
 
         <div className="mt-10 flex justify-center">
           <Button href={project.liveUrl} icon="arrowUpRight">
-            Visit the Live Site
+            View Site
           </Button>
         </div>
       </Container>

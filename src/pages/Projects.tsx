@@ -72,7 +72,7 @@ export function Projects() {
                     variant={p.caseStudy ? 'ghost' : 'primary'}
                     icon="arrowUpRight"
                   >
-                    Visit Live Site
+                    View Site
                   </Button>
                 </div>
               </div>

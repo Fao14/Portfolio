@@ -106,7 +106,7 @@ export const projects: Project[] = [
           'Serif headlines and gold accents on deep navy to signal prestige',
         ],
         image: '/images/gma-hero.jpg',
-        imageCaptionLabel: 'Live site',
+        imageCaptionLabel: 'Homepage',
         imageCaption: 'The Convergence of Business & Sport',
       },
       build: {
@@ -206,33 +206,33 @@ export const projects: Project[] = [
     summary:
       'Designed and built the company website for a pan-African sports technology firm: device showcase, six-country footprint and a lead-capture enquiry form.',
     detail:
-      'Built with React and Tailwind CSS: device product cards, a six-country footprint section, insights articles and a detailed enquiry form with dropdowns, multi-select and a required consent checkbox.',
+      'Built with React and Tailwind CSS: device product cards, a six-country footprint section, insights articles and an enquiry form for booking strategy calls.',
     stack: ['React', 'Tailwind CSS', 'Figma'],
     image: '/images/afritech-hero.jpg',
     liveUrl: 'https://www.afritechsports.com/',
     year: '2025',
     caseStudy: {
       eyebrow: 'Development Case Study',
-      title: 'Afritech Sports: Data-Driven Storytelling',
+      title: 'Afritech Sports: A Company Website for Sports Technology',
       subtitle:
         'Developing a bold, responsive company website that explains sports technology to athletes, coaches and governments across Africa.',
       snapshot: [
         { label: 'Role', value: 'UI/UX Designer & Developer' },
         { label: 'Stack', value: 'React, Tailwind CSS' },
         { label: 'Launched', value: 'November 2025' },
-        { label: 'Status', value: 'Live at afritechsports.com' },
+        { label: 'Status', value: 'Live' },
       ],
       brief: {
         label: 'Section 1: The Brief',
         heading: 'Simplifying Complex Tech',
-        text: 'Afritech distributes performance devices such as Soccerbee, OliverPro, Blazepod and A-Champs ROX Pro, and also advises ministries on digital transformation and AI data governance. The site had to explain all of this to non-technical visitors and turn their interest into enquiries.',
+        text: 'Afritech sells sports performance devices and advisory services. The site had to explain these clearly to non-technical visitors and turn interest into enquiries.',
         points: [
           'Benefit-led device cards with links to each official product site',
-          'Proof up front: 200+ teams, 50+ countries, 45% lower injury risk',
+          'Key benefits shown up front, before visitors scroll',
           'One clear path to action: book a strategy call',
         ],
         image: '/images/afritech-hero.jpg',
-        imageCaptionLabel: 'Live site',
+        imageCaptionLabel: 'Homepage',
         imageCaption: 'Performance, Data & African Sport',
       },
       build: {
@@ -242,7 +242,7 @@ export const projects: Project[] = [
         items: [
           {
             title: 'Enquiry form',
-            text: 'Required fields, a country dropdown, multi-select for devices, a service dropdown and a required privacy consent checkbox.',
+            text: 'Country, device and service fields, so every enquiry arrives with what the team needs.',
           },
           {
             title: 'Reusable cards',
@@ -250,7 +250,7 @@ export const projects: Project[] = [
           },
           {
             title: 'African footprint',
-            text: 'A country list for Kenya, Rwanda, Namibia, Uganda, South Africa and Nigeria with a detail panel for each.',
+            text: 'A section for the six countries where Afritech works, with a detail panel for each.',
           },
           {
             title: 'In-page navigation',
@@ -301,12 +301,12 @@ export const projects: Project[] = [
       final: {
         label: 'Section 5: The Final Product',
         heading: 'A Platform Built for Action',
-        text: 'The live site pairs a bold sporty identity with practical structure, so visitors understand the offer in seconds and know exactly how to get in touch.',
+        text: 'A bold, sporty identity with a clear structure that leads visitors from the offer to getting in touch.',
         shots: [
           {
             image: '/images/afritech-devices.jpg',
             title: 'Devices We Sell',
-            text: 'Product cards backed by real performance statistics.',
+            text: 'Product cards with key benefits and links to each official product site.',
           },
           {
             image: '/images/afritech-contact.jpg',
@@ -315,10 +315,10 @@ export const projects: Project[] = [
           },
         ],
         highlights: [
-          'Six-country footprint with Kenya as headquarters',
-          'Eight service areas from grassroots development to smart stadiums',
-          'Enquiry form with dropdowns, multi-select and consent checkbox',
-          'Insights articles on AI, wearables and federation data systems',
+          'Device showcase with links to official product sites',
+          'Six-country footprint section',
+          'Enquiry form for booking strategy calls',
+          'Insights articles section',
         ],
       },
     },
@@ -359,7 +359,7 @@ export const projects: Project[] = [
           'An admin dashboard for products, orders, reviews and training requests',
         ],
         image: '/images/pedni-hero.jpg',
-        imageCaptionLabel: 'Live site',
+        imageCaptionLabel: 'Homepage',
         imageCaption: "Nature's Golden Gift",
       },
       build: {
