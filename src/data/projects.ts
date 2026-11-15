@@ -87,19 +87,19 @@ export const projects: Project[] = [
     year: '2026',
     caseStudy: {
       eyebrow: 'Development Case Study',
-      title: 'GMA Sports: Strategic Digital Ecosystem',
+      title: 'GMA Sports & Business: A Premium Consultancy Website',
       subtitle:
         'Designing and developing a high-end, responsive website for an international sports consultancy, balancing prestige with fast, practical performance.',
       snapshot: [
         { label: 'Role', value: 'UI/UX Designer & Developer' },
         { label: 'Stack', value: 'React, Tailwind CSS' },
-        { label: 'Timeline', value: 'Aug 2026 – Present' },
+        { label: 'Timeline', value: 'August 2026' },
         { label: 'Status', value: 'Live' },
       ],
       brief: {
         label: 'Section 1: The Brief',
         heading: 'Modernizing a Professional Hub',
-        text: 'GMA needed a digital home that matches the elite world of sports management. It is a consultancy, not a traditional law firm, so the site had to feel as credible as a top advisory practice while loading quickly and working well on every screen.',
+        text: 'GMA needed a website that feels as credible as a top advisory practice, loads quickly and works well on every screen.',
         points: [
           'One responsive codebase for desktop, tablet and mobile',
           'Clear structure for two divisions and eight services',
@@ -112,7 +112,7 @@ export const projects: Project[] = [
       build: {
         label: 'Section 2: The Build',
         heading: 'From Figma to Production',
-        text: 'I designed the site in Figma and then developed it myself in React with Tailwind CSS, so the code follows the design closely.',
+        text: 'I designed the site in Figma and built it in React with Tailwind CSS, so the code follows the design closely.',
         items: [
           {
             title: 'Responsive layouts',
@@ -127,8 +127,8 @@ export const projects: Project[] = [
             text: 'A continuously scrolling ribbon of organisations, plus leadership, partners and insights sections.',
           },
           {
-            title: 'Deployment',
-            text: 'Automated deployments, so each update I push goes live without manual uploads.',
+            title: 'Performance',
+            text: 'Optimised images and lightweight components so pages load quickly on mobile networks.',
           },
         ],
       },
@@ -139,22 +139,19 @@ export const projects: Project[] = [
           {
             icon: 'building',
             title: 'Corporate Clients',
-            quote:
-              "I need to verify the consultancy's track record and professional standing before initiating a partnership.",
+            quote: "Want to check the consultancy's track record before partnering.",
             seeking: 'Credibility & Authority',
           },
           {
             icon: 'flag',
             title: 'Professional Athletes',
-            quote:
-              'I require specialized data support and legal advice to protect my career and maximize my commercial potential.',
+            quote: 'Need advice to protect their careers and grow their commercial value.',
             seeking: 'Data & Protection',
           },
           {
             icon: 'handshake',
             title: 'Strategic Partners',
-            quote:
-              'I look for an organized ecosystem where collaboration is streamlined and project goals are clearly outlined.',
+            quote: 'Look for clear structure and easy collaboration.',
             seeking: 'Structure & Efficiency',
           },
         ],
@@ -177,8 +174,8 @@ export const projects: Project[] = [
       },
       final: {
         label: 'Section 5: The Final Product',
-        heading: 'Precision in Every Pixel',
-        text: 'The finished site is fast, responsive and trustworthy, positioning GMA as a premier choice for strategic advisory in the sports industry.',
+        heading: 'The Finished Site',
+        text: 'A responsive, multi-page site that presents two divisions and eight services clearly, with consultation booking throughout.',
         shots: [
           {
             image: '/images/gma-services.jpg',
@@ -268,22 +265,19 @@ export const projects: Project[] = [
           {
             icon: 'activity',
             title: 'Performance Athletes',
-            quote:
-              'I want to see how a device will improve my training and my results, without needing a team or special setup.',
+            quote: 'Want to see how a device will improve their training and results, without special setup.',
             seeking: 'Results & Simplicity',
           },
           {
             icon: 'clipboard',
             title: 'Team Coaches',
-            quote:
-              'I need to compare tools quickly and understand how they help me manage player load and reduce injuries.',
+            quote: 'Need to compare tools quickly and see how they help manage player load and reduce injuries.',
             seeking: 'Clarity & Comparison',
           },
           {
             icon: 'landmark',
             title: 'Federations & Ministries',
-            quote:
-              'I need a credible partner for digital transformation, data systems and policy across our region.',
+            quote: 'Look for a credible partner for digital transformation, data systems and policy.',
             seeking: 'Trust & Expertise',
           },
         ],
@@ -398,19 +392,19 @@ export const projects: Project[] = [
           {
             icon: 'users',
             title: 'Home Buyers',
-            quote: 'I want to buy pure, local honey and pay quickly with M-Pesa.',
+            quote: 'Want pure, local honey and a quick way to pay with M-Pesa.',
             seeking: 'Trust & Easy Payment',
           },
           {
             icon: 'clipboard',
             title: 'Beekeepers',
-            quote: 'I need reliable equipment and training to start or grow my apiary.',
+            quote: 'Need reliable equipment and training to start or grow an apiary.',
             seeking: 'Equipment & Guidance',
           },
           {
             icon: 'building',
             title: 'Bulk Buyers',
-            quote: 'I want to request quotes and order in bulk for my business or institution.',
+            quote: 'Want to request quotes and order in bulk for a business or institution.',
             seeking: 'Quotes & Volume',
           },
         ],

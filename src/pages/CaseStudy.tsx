@@ -114,7 +114,7 @@ export function CaseStudy({ project }: { project: Project }) {
                 <Icon name={c.icon} />
               </span>
               <h3 className="mt-5 text-lg font-bold">{c.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-body">“{c.quote}”</p>
+              <p className="mt-2 text-sm leading-relaxed text-body">{c.quote}</p>
               <p className="mt-4 text-sm font-semibold text-brand">Seeking: {c.seeking}</p>
             </div>
           ))}
