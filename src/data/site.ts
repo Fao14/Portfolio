@@ -76,7 +76,7 @@ export const experience = [
     role: 'UI/UX Design & Front-End Development Intern',
     org: 'Little',
     period: 'Jun 2026 – Sep 2026',
-    text: 'Moved from UI/UX design into front-end development, implementing designs with React, JavaScript and TypeScript. Also redesigned a product interface and designed new features as high-fidelity Figma prototypes.',
+    text: 'Moved from UI/UX design into front-end development. Most of my work was coding: fixing bugs and updating the interface of a live company website in React, JavaScript and TypeScript. Also designed new features as high-fidelity Figma prototypes.',
   },
 ]
 
