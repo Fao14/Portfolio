@@ -342,7 +342,7 @@ export const projects: Project[] = [
       eyebrow: 'Full-Stack Case Study',
       title: 'Pedni Honey: From Hive to Checkout',
       subtitle:
-        'Designing and building a full-stack e-commerce platform for a Kenyan beekeeping supplies business, from the first Figma screens to M-Pesa checkout and an admin dashboard.',
+        'Designing and building a full-stack e-commerce platform for a Kenyan beekeeping supplies business, from the first Figma screens to M-Pesa checkout.',
       snapshot: [
         { label: 'Role', value: 'UI/UX Designer & Developer' },
         { label: 'Stack', value: 'React, FastAPI, PostgreSQL' },
@@ -352,11 +352,11 @@ export const projects: Project[] = [
       brief: {
         label: 'Section 1: The Brief',
         heading: 'Taking a Beekeeping Business Online',
-        text: 'Pedni Honey supplies beekeeping equipment, honey and training across Kenya. The goal was one platform where customers can browse equipment, pay with M-Pesa and request training or bulk orders, and where the team can run the store themselves.',
+        text: 'Pedni Honey supplies beekeeping equipment, honey and training across Kenya. The goal was one platform where customers can browse equipment, pay with M-Pesa and request training or bulk orders,.',
         points: [
           'A product catalogue with categories, search and stock levels',
           'Checkout built around M-Pesa, the way Kenyan customers pay',
-          'An admin dashboard for products, orders, reviews and training requests',
+          'Request forms for training, bulk orders and consultations',
         ],
         image: '/images/pedni-hero.jpg',
         imageCaptionLabel: 'Homepage',
@@ -376,8 +376,8 @@ export const projects: Project[] = [
             text: "Checkout sends an STK Push prompt to the customer's phone, and a payment callback confirms the order and stores the M-Pesa receipt.",
           },
           {
-            title: 'Admin dashboard',
-            text: 'A protected admin area to manage products and stock, orders and delivery, customer reviews, training requests and newsletters.',
+            title: 'Product catalogue',
+            text: 'Categories, search and stock status on every product, loaded from the API.',
           },
           {
             title: 'Customer accounts',
@@ -420,7 +420,7 @@ export const projects: Project[] = [
           },
           {
             title: 'Live updates',
-            text: 'Shop pages refresh automatically when the admin changes a product, so prices and stock stay current.',
+            text: 'Shop pages refresh automatically when products are updated, so prices and stock stay current.',
           },
         ],
         image: '/images/pedni-why.jpg',
@@ -428,7 +428,7 @@ export const projects: Project[] = [
       final: {
         label: 'Section 5: The Final Product',
         heading: 'A Store Built for Kenyan Customers',
-        text: 'The platform brings shopping, payment and store management together: customers browse and pay with M-Pesa, and the team runs everything from one dashboard.',
+        text: 'The platform brings shopping and payment together: customers browse equipment, add to cart and pay with M-Pesa in a few steps.',
         shots: [
           {
             image: '/images/pedni-services.jpg',
@@ -443,9 +443,9 @@ export const projects: Project[] = [
         ],
         highlights: [
           'M-Pesa STK Push checkout with payment confirmation',
-          'Admin dashboard for products, orders, reviews and training requests',
+          'Product search and category filters',
           'Customer accounts with order tracking',
-          'Product reviews with admin verification',
+          'Customer product reviews',
         ],
       },
     },
