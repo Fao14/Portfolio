@@ -26,7 +26,7 @@ export const site = {
   stats: [
     { label: 'Live client sites', value: '2' },
     { label: 'Clients', value: '3' },
-    { label: 'Designing since', value: '2023' },
+    { label: 'In tech since', value: '2023' },
   ],
 
   footerBlurb: 'Websites and web apps, from design to deployment.',
