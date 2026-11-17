@@ -233,7 +233,8 @@ export function Projects() {
                   <div className="text-sm">
                     <p className="font-semibold">{m.org}</p>
                     <p className="text-muted">
-                      {m.title} · {m.date}
+                      {m.title}
+                      {m.date && ` · ${m.date}`}
                     </p>
                   </div>
                 </li>

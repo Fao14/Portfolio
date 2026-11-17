@@ -112,8 +112,12 @@ export const memberships = [
   {
     title: 'Ambassador',
     org: 'IEEE Student Branch, Co-operative University of Kenya',
-    date: '2026 – Present',
+    date: '2026',
   },
-]
+  {
+    title: 'Member',
+    org: 'Google Developer Group (GDG), Co-operative University of Kenya',
+  },
+] as { title: string; org: string; date?: string }[]
 
 export const tools = ['Git', 'GitHub', 'Vercel', 'Figma', 'Framer']
