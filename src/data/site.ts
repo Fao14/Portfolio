@@ -110,7 +110,7 @@ export const certifications = [
 
 export const memberships = [
   {
-    title: 'Member',
+    title: 'Ambassador',
     org: 'IEEE Student Branch, Co-operative University of Kenya',
     date: '2026 – Present',
   },
