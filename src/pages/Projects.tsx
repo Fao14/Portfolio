@@ -188,18 +188,6 @@ export function Projects() {
                 </span>
               ))}
             </div>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-bold">Core Skills</h2>
-            <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              {coreSkills.map((s) => (
-                <li key={s} className="flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-medium shadow-sm">
-                  <Icon name="check" className="size-4 shrink-0 text-brand" />
-                  {s}
-                </li>
-              ))}
-            </ul>
 
             <h2 className="mt-10 text-xl font-bold">Certifications</h2>
             <ul className="mt-5 space-y-3">
@@ -221,6 +209,18 @@ export function Projects() {
                       </button>
                     )}
                   </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-bold">Core Skills</h2>
+            <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              {coreSkills.map((s) => (
+                <li key={s} className="flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-medium shadow-sm">
+                  <Icon name="check" className="size-4 shrink-0 text-brand" />
+                  {s}
                 </li>
               ))}
             </ul>
