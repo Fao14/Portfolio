@@ -352,7 +352,7 @@ export const projects: Project[] = [
       brief: {
         label: 'Section 1: The Brief',
         heading: 'Taking a Beekeeping Business Online',
-        text: 'Pedni Honey supplies beekeeping equipment, honey and training across Kenya. The goal was one platform where customers can browse equipment, pay with M-Pesa and request training or bulk orders,.',
+        text: 'Pedni Honey supplies beekeeping equipment, honey and training across Kenya. The goal was one platform where customers can browse equipment, pay with M-Pesa and request training or bulk orders.',
         points: [
           'A product catalogue with categories, search and stock levels',
           'Checkout built around M-Pesa, the way Kenyan customers pay',
