@@ -93,20 +93,20 @@ export const coreSkills = [
   'UI/UX & Figma',
 ]
 
-// Certificates. `link` (optional) opens the certificate.
+// Certificates. `image` (optional) opens the certificate in a pop-up on the page.
 export const certifications = [
   {
     title: 'Generative AI Essentials for Software Developers',
     issuer: 'Moringa School',
     date: 'March 2026',
-    link: '/certificates/generative-ai-essentials-moringa-school.pdf',
+    image: '/certificates/generative-ai-essentials-moringa-school.jpg',
   },
   {
     title: 'Introduction to AI and LLMs',
     issuer: 'Ngao Labs × Cyberiad Labs',
     date: 'In progress · November 2026',
   },
-] as { title: string; issuer: string; date: string; link?: string }[]
+] as { title: string; issuer: string; date: string; image?: string }[]
 
 export const memberships = [
   {

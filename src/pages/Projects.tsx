@@ -211,15 +211,14 @@ export function Projects() {
                     <p className="text-muted">
                       {c.issuer} · {c.date}
                     </p>
-                    {c.link && (
-                      <a
-                        href={c.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-1 inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+                    {c.image && (
+                      <button
+                        type="button"
+                        onClick={() => setOpen({ title: c.title, type: `${c.issuer} · ${c.date}`, image: c.image, accent: '' })}
+                        className="mt-1 inline-flex cursor-pointer items-center gap-1 font-semibold text-brand hover:underline"
                       >
-                        View certificate <Icon name="arrowUpRight" className="size-3.5" />
-                      </a>
+                        View certificate <Icon name="eye" className="size-3.5" />
+                      </button>
                     )}
                   </div>
                 </li>
