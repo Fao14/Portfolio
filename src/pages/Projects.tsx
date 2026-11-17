@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { explorations, projects, type Exploration } from '../data/projects'
-import { coreSkills, experience, tools } from '../data/site'
+import { certifications, coreSkills, experience, memberships, tools } from '../data/site'
 import { Icon } from '../components/Icon'
 import { Button, Container, Eyebrow, Tag } from '../components/ui'
 
@@ -197,6 +197,46 @@ export function Projects() {
                 <li key={s} className="flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-medium shadow-sm">
                   <Icon name="check" className="size-4 shrink-0 text-brand" />
                   {s}
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="mt-10 text-xl font-bold">Certifications</h2>
+            <ul className="mt-5 space-y-3">
+              {certifications.map((c) => (
+                <li key={c.title} className="flex gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                  <Icon name="award" className="mt-0.5 size-5 shrink-0 text-brand" />
+                  <div className="text-sm">
+                    <p className="font-semibold">{c.title}</p>
+                    <p className="text-muted">
+                      {c.issuer} · {c.date}
+                    </p>
+                    {c.link && (
+                      <a
+                        href={c.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-1 inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+                      >
+                        View certificate <Icon name="arrowUpRight" className="size-3.5" />
+                      </a>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="mt-10 text-xl font-bold">Memberships</h2>
+            <ul className="mt-5 space-y-3">
+              {memberships.map((m) => (
+                <li key={m.org} className="flex gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                  <Icon name="users" className="mt-0.5 size-5 shrink-0 text-brand" />
+                  <div className="text-sm">
+                    <p className="font-semibold">{m.org}</p>
+                    <p className="text-muted">
+                      {m.title} · {m.date}
+                    </p>
+                  </div>
                 </li>
               ))}
             </ul>

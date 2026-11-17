@@ -5,6 +5,12 @@ const paths: Record<string, ReactNode> = {
   arrowRight: <path d="M5 12h14M13 6l6 6-6 6" />,
   arrowUpRight: <path d="M7 17 17 7M8 7h9v9" />,
   arrowLeft: <path d="M19 12H5M11 6l-6 6 6 6" />,
+  award: (
+    <>
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11" />
+    </>
+  ),
   search: (
     <>
       <circle cx="11" cy="11" r="7" />
